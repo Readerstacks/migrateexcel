@@ -2,7 +2,7 @@
     <a href="https://github.com/readerstacks" target="_blank">
         <img src="https://i0.wp.com/readerstacks.com/wp-content/uploads/2021/10/Screenshot_2021-10-30_at_11.21.33_AM-removebg-preview-5-1.png?w=500&ssl=1" height="100px">
     </a>
-    <h1 align="center">Laravel Query Migration</h1>
+    <h1 align="center">Laravel Excel(maatwebsite/excel) 2 and 3 Bridge</h1>
     <br>
 </p>
 
@@ -15,7 +15,7 @@ For license information check the [LICENSE](LICENSE.md)-file.
 Features
 --------
 
-- Friendly raw query migrations 
+- Use methods of Laravel Excel 2 methods in Excel maatwebsite/excel 3 
 
 
 Installation
@@ -26,7 +26,7 @@ Installation
 The first step is using composer to install the package and automatically update your `composer.json` file, you can do this by running:
 
 ```shell
-composer require readerstacks/querymigration
+composer require readerstacks/migrateexcel
 ```
 
 > **Note**: If you are using Laravel 5.5, the steps 2  for providers and aliases, are unnecessaries. QieryMigrations supports Laravel new [Package Discovery](https://laravel.com/docs/5.5/packages#package-discovery).
@@ -43,7 +43,7 @@ You need to update your application configuration in order to register the packa
 return [
     // ...
     'providers' => [
-        Readerstacks\QueryMigration\QueryMigrationServiceProvider::class,
+        Readerstacks\MigrateExcel\MigrateExcelServiceProvider::class,
         // ...
     ],
     // ...
@@ -64,7 +64,7 @@ $app = new Laravel\Lumen\Application(
 
 // ...
 
-$app->register(Readerstacks\QueryMigration\QueryMigrationServiceProvider::class);
+$app->register(Readerstacks\MigrateExcel\MigrateExcelServiceProvider::class);
 
 // ...
 
@@ -80,7 +80,7 @@ return $app;
 In your terminal type
 
 ```shell
-php artisan vendor:publish --provider="Readerstacks\QueryMigration\QueryMigrationServiceProvider"
+php artisan vendor:publish --provider="Readerstacks\MigrateExcel\MigrateExcelServiceProvider"
 ```
 
 #### Run Migration
