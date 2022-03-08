@@ -7,7 +7,7 @@
     },
     "autoload": {
         "psr-4": {
-            "Readerstacks\\Migrateexcel\\": "src/"
+            "Readerstacks\\MigrateExcel\\": "src/"
         }
     },
     "authors": [
@@ -20,7 +20,7 @@
     "extra": {
         "laravel": {
             "providers": [
-                "Readerstacks\\Migrateexcel\\MigrateExcelServiceProvider"
+                "Readerstacks\\MigrateExcel\\MigrateExcelServiceProvider"
             ]
              
         }
