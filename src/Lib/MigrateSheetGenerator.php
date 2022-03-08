@@ -20,7 +20,7 @@ class MigrateSheetGenerator{
         $this->view=$view;
         $this->data=$data;
         $class=config("migrate_excel_config.viewClass");
-        $this->sheet=new $class($this->title, $this->view,$this->data,$this->callMethods);
+        $this->sheet=new $class($this->title, $this->view,$this->data,array($this, 'callMethods'));
          
         
         $cb=$this->callback;
