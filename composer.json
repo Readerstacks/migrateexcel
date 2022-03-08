@@ -1,0 +1,28 @@
+{
+    "name": "readerstacks/migrateexcel",
+    "description": "Migrate laravel excel 2 to 3 withour much headache",
+    "type": "library",
+    "require": {
+        "maatwebsite/excel": "3.*"
+    },
+    "autoload": {
+        "psr-4": {
+            "Readerstacks\\Migrateexcel\\": "src/"
+        }
+    },
+    "authors": [
+        {
+            "name": "ReaderStacks.",
+            "email": "info@readerstacks.com"
+        }
+    ],
+    
+    "extra": {
+        "laravel": {
+            "providers": [
+                "Readerstacks\\Migrateexcel\\MigrateExcelServiceProvider"
+            ]
+             
+        }
+    }
+}
